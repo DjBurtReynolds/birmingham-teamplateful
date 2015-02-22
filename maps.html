@@ -49,23 +49,73 @@ function initialize() {
       mapOptions);
 
   var marker = new google.maps.Marker({
-    position: { lat:33.552651,lng:   -86.732130,},
+    position: { lat:33.532787,lng:    -86.711015,},
     map: map,
     title: 'Click to zoom'
   });
   var marker2 = new google.maps.Marker({
-    position: { lat:33.536445, lng:   -86.806142,},
+    position: { lat:33.465674,  lng:   -86.868612,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker3 = new google.maps.Marker({
+    position: { lat:33.459877,  lng:   -86.911793,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker4 = new google.maps.Marker({
+    position: { lat:33.479082, lng:   -86.856906,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker5 = new google.maps.Marker({
+    position: { lat:33.492654,  lng:   -86.851957,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker6 = new google.maps.Marker({
+    position: { lat:33.449219,  lng:   -86.888875,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker7 = new google.maps.Marker({
+    position: { lat:33.584190,  lng:   -86.699480,},
+    map: map,
+    title: 'Click to zoom'
+  });
+var marker8 = new google.maps.Marker({
+    position: { lat:33.442114,  lng:   -86.991036,},
     map: map,
     title: 'Click to zoom'
   });
 
+
   
   google.maps.event.addListener(marker, 'click', function() {
-   window.alert("Eastlake Stop Monday Wednesday Friday 2:00 - 4:00")
+   window.alert("Crestwood Stop on Tuesday Afternoon")
 });
   google.maps.event.addListener(marker2, 'click', function() {
-   window.alert("Norwood Stop Tuesday Thursday 2:00 - 4:00")
+   window.alert("Powderly Elementary School Stop Monday Afternoon")
   });
+   google.maps.event.addListener(marker3, 'click', function() {
+   window.alert("Midfield Elementary Stop Monday Morning")
+  });
+   google.maps.event.addListener(marker4, 'click', function() {
+   window.alert("Jackson elementary Stop Monday Afternoon")
+  });
+   google.maps.event.addListener(marker5, 'click', function() {
+   window.alert("Hemphill Elementary Stop Tuesday Morning ")
+  });
+   google.maps.event.addListener(marker6, 'click', function() {
+   window.alert("Wenonoah Elementary Stop Tuesday Afternoon")
+  });
+   google.maps.event.addListener(marker7, 'click', function() {
+   window.alert("Roebuck Parkway Stop Tuesday Morning")
+  });
+   google.maps.event.addListener(marker8, 'click', function() {
+   window.alert("Hueytown Elementary Stop Monday Morning")
+  });
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
@@ -107,6 +157,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
             <li><a href="cart.html">Cart</a></li>
             <li><a href=" analytics.html">Analytics</a></li>
             <li class="active"><a href="maps.html">Maps</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
           </ul>
         </div> 
       </div>
